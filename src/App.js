@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Routes, Route } from "react-router-dom";
+import BeenPage from "./Components/BeenPage";
+import PlanningPage from "./Components/PlanningPage";
+import Friends from "./Components/Friends";
+import Moments from "./Components/Moments";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Routes>
+        <Route path="/" element={<BeenPage />}></Route>
+        <Route path="/Been" element={<BeenPage />}></Route>
+        <Route path="/Planning" element={<PlanningPage />}></Route>
+        <Route path="/Moments" element={<Moments />}></Route>
+        <Route path="/Friends" element={<Friends />}></Route>
+      </Routes>
+    </QueryClientProvider>
   );
 }
 

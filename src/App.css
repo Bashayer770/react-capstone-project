@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.map path {
+  fill: #282c34;
+  stroke: #eee;
+  stroke-width: 0.25;
+}
+
+.map path:hover {
+  fill: orangered;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+#highLight {
+  fill: orangered;
+
+  cursor: pointer;
+}
