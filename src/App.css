@@ -51,6 +51,7 @@
 
 #highLight {
   fill: orangered;
-
   cursor: pointer;
+  stroke: orange;
+  stroke-width: 1.5;
 }
