@@ -38,20 +38,134 @@
 }
 
 .map path {
-  fill: #282c34;
-  stroke: #eee;
+  fill: #393d3d;
+  stroke: #000000;
   stroke-width: 0.25;
 }
 
 .map path:hover {
-  fill: orangered;
+  fill: #ff5c00;
   transition: 0.6s;
   cursor: pointer;
 }
 
 #highLight {
-  fill: orangered;
+  fill: #ff5c00;
   cursor: pointer;
   stroke: orange;
   stroke-width: 1.5;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(180deg, #0c1618 0%, #0d1010 100%);
+}
+
+.leftBar {
+  width: 188px;
+  min-width: 188px;
+  height: 100%;
+  background: linear-gradient(
+      0.14deg,
+      rgba(255, 255, 255, 0.2) 19.87%,
+      rgba(12, 22, 24, 0.2) 100.94%
+    ),
+    #131c20;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BEEN {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  color: #ff5c00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.BackGround {
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(180deg, #0c1618 0%, #0d1010 100%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollBar {
+  height: 100%;
+  overflow: scroll;
+  margin-top: 1%;
+  scrollbar-color: black;
+}
+
+.Logo_ {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+}
+
+.menu_ {
+  height: 100%;
+  width: 100%;
+  background-color: #ff5c00;
+}
+
+.theh5 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #ea7407;
+}
+
+.Bewhite {
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 5px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.profile {
+  width: 100%;
+  height: 150px;
+  background-color: #61dafb;
 }

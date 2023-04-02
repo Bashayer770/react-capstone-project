@@ -6,19 +6,27 @@ import BeenPage from "./Components/BeenPage";
 import PlanningPage from "./Components/PlanningPage";
 import Friends from "./Components/Friends";
 import Moments from "./Components/Moments";
+import LoginModel from "./Components/LoginModel";
+import NavBar from "./Components/NavBar";
+import SignUpModel from "./Components/SignUpModel";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Routes>
-        <Route path="/" element={<BeenPage />}></Route>
-        <Route path="/Been" element={<BeenPage />}></Route>
-        <Route path="/Planning" element={<PlanningPage />}></Route>
-        <Route path="/Moments" element={<Moments />}></Route>
-        <Route path="/Friends" element={<Friends />}></Route>
-      </Routes>
+      <div className="container">
+        <NavBar></NavBar>
+        <Routes>
+          <Route path="/" element={<BeenPage />}></Route>
+          <Route path="/Been" element={<BeenPage />}></Route>
+          <Route path="/Planning" element={<PlanningPage />}></Route>
+          <Route path="/Moments" element={<Moments />}></Route>
+          <Route path="/Friends" element={<Friends />}></Route>
+          <Route path="/Login" element={<LoginModel />}></Route>
+          <Route path="/signup" element={<SignUpModel />}></Route>
+        </Routes>
+      </div>
     </QueryClientProvider>
   );
 }
