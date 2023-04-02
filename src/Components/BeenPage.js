@@ -8,21 +8,19 @@ const BeenPage = () => {
   return (
     <>
       <div className="mapContainer">
-        <div className="BackGround">
-          <div className="BEEN">B E E N</div>
-          <div className="addCountryButton">
-            <img
-              className="plusCircle_"
-              src={pluscircle}
-              width="32px"
-              height="32px"
-            />
-          </div>
-          <div className="beenUnderLine"></div>
+        <div className="BEEN">B E E N</div>
+        {/* <div className="addCountryButton">
+          <img
+            className="plusCircle_"
+            src={pluscircle}
+            width="32px"
+            height="32px"
+          />
+        </div> */}
+        {/* <div className="beenUnderLine"></div> */}
 
-          <div className="scrollBar">
-            <WorldMap className={"map"} been={been} width="2000" />
-          </div>
+        <div className="scrollBar">
+          <WorldMap className={"map"} been={been} width="2000" />
         </div>
       </div>
     </>
