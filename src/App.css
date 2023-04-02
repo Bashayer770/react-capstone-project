@@ -270,3 +270,38 @@
 
   color: #ffffff;
 }
+
+.logouticon {
+  color: #ffffff;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.backGround_ {
+  background: linear-gradient(180deg, #89959c 0%, rgba(137, 149, 156, 0) 100%);
+}
+.motherContainer {
+  box-sizing: border-box;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 507px;
+  height: 758px;
+  position: relative;
+  background: linear-gradient(
+      0.14deg,
+      rgba(255, 255, 255, 0.2) 19.87%,
+      rgba(12, 22, 24, 0.2) 100.94%
+    ),
+    #131c20;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.worldimage {
+  position: absolute;
+
+  box-sizing: border-box;
+  width: 20%;
+  height: 20%;
+}

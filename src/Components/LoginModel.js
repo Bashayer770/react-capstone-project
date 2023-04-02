@@ -1,5 +1,6 @@
 import { Button, InputGroup, FormControl, Modal } from "react-bootstrap";
 import { useState } from "react";
+import worldmapimg from "../Assests/worldmapimg.png";
 
 function LoginModel() {
   const [show, setShow] = useState(false);
@@ -17,38 +18,43 @@ function LoginModel() {
   };
 
   return (
-    <>
-      <Button variant="outline-light mx-3" onClick={handleShow}>
-        LOGIN
-      </Button>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Body>
-          <form onSubmit={handleSubmit}>
-            <InputGroup className="mb-3">
-              <InputGroup.Text>Username</InputGroup.Text>
-              <FormControl
-                placeholder="Your username"
-                name="username"
-                type="text"
-                onChange={handleChange}
-              />
-            </InputGroup>
-            <InputGroup className="mb-3">
-              <InputGroup.Text>Password</InputGroup.Text>
-              <FormControl
-                name="password"
-                type="password"
-                onChange={handleChange}
-                placeholder="Password"
-              />
-            </InputGroup>
-            <Button variant="outline-dark" type="submit">
-              LOGIN
-            </Button>
-          </form>
-        </Modal.Body>
-      </Modal>
-    </>
+    <div className="backGround_">
+      <div className="motherContainer">
+        <div className="worldimage">
+          <img src={worldmapimg} width="50%" />
+        </div>
+        {/* <Button variant="outline-light mx-3" onClick={handleShow}> */}
+        {/* LOGIN */}
+        {/* </Button> */}
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Body>
+            <form onSubmit={handleSubmit}>
+              <InputGroup className="mb-3">
+                <InputGroup.Text>Username</InputGroup.Text>
+                <FormControl
+                  placeholder="Your username"
+                  name="username"
+                  type="text"
+                  onChange={handleChange}
+                />
+              </InputGroup>
+              <InputGroup className="mb-3">
+                <InputGroup.Text>Password</InputGroup.Text>
+                <FormControl
+                  name="password"
+                  type="password"
+                  onChange={handleChange}
+                  placeholder="Password"
+                />
+              </InputGroup>
+              <Button variant="outline-dark" type="submit">
+                LOGIN
+              </Button>
+            </form>
+          </Modal.Body>
+        </Modal>
+      </div>
+    </div>
   );
 }
 

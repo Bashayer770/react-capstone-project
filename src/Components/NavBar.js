@@ -6,6 +6,7 @@ import BeenPage from "./BeenPage";
 import PlanningPage from "./PlanningPage";
 import Friends from "./Friends";
 import Chevrondown from "../svg/chevrondown";
+import Logout from "../svg/logout";
 
 const NavBar = () => {
   return (
@@ -77,6 +78,9 @@ const NavBar = () => {
             border: "1px solid rgba(255, 255, 255, 0.46)",
           }}
         ></div>
+        <div className="logouticon">
+          <Logout />
+        </div>
       </div>
     </div>
   );
