@@ -5,36 +5,10 @@ import { Link } from "react-router-dom";
 import BeenPage from "./BeenPage";
 import PlanningPage from "./PlanningPage";
 import Friends from "./Friends";
+import Chevrondown from "../svg/chevrondown";
 
 const NavBar = () => {
   return (
-    // <Navbar>
-    //   <Container>
-    //     <Link to="/">
-
-    //     </Link>
-    //     <Nav>
-    //       {/* <div className="menu_">
-    //         <div className="theMenuList">
-    //           <BeenPage>
-    //             <h5>BEEN</h5>
-    //           </BeenPage>
-    //           <div className="bars"></div>
-    //           <PlanningPage>
-    //             <h5>PLANNING</h5>
-    //           </PlanningPage>
-    //           <div className="bars"></div>
-    //           <Friends>
-    //             <h5>FRIENDS</h5>
-    //           </Friends>
-    //         </div>
-    //       </div> */}
-    //       <div className="bars"></div>
-    //       <div className="profile"></div>
-    //       <div className="username_">username</div>
-    //     </Nav>
-    //   </Container>
-    // </Navbar>
     <div className="leftBar">
       <div className="Logo_">
         <img src={slogo} width="85" />
@@ -53,23 +27,56 @@ const NavBar = () => {
           <h5>PLANNING</h5>
 
           <div className="bars"></div>
-
-          <h5>FRIENDS</h5>
+          <div className="nav-item">
+            <h5>FRIENDS</h5>
+            <Chevrondown />
+          </div>
         </div>
       </div>
+      <div className="bars"></div>
       <div
         style={{
           width: "100%",
           height: "150px",
-          backgroundColor: "green",
+
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          position: "relative",
         }}
       >
-        <div className=""></div>
-        <div className=""></div>
-        <div className="">username</div>
+        <div
+          className=""
+          style={{
+            fontFamily:
+              "Franklin Gothic Medium ,Arial Narrow ,Arial, sans-serif",
+            textAlign: "center",
+            fontSize: "12px",
+            fontStyle: "normal",
+            fontWeight: 450,
+            color: " #FFFFFF",
+            letterSpacing: "1px",
+          }}
+        >
+          Username
+        </div>
+        <div className="" style={{}}></div>
+        <div
+          className=""
+          style={{
+            boxSizing: "border-box",
+
+            position: "absolute",
+            width: "54px",
+            height: "54px",
+            borderRadius: "50%",
+            left: "12px",
+
+            background:
+              "linearradient(186.22 deg '#131C20' -87.4%; rgba(217, 217, 217, 0) 95.09%)",
+            border: "1px solid rgba(255, 255, 255, 0.46)",
+          }}
+        ></div>
       </div>
     </div>
   );
