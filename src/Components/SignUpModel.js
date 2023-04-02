@@ -1,7 +1,55 @@
-import React from "react";
+import { Button, InputGroup, FormControl, Modal } from "react-bootstrap";
+import { useState } from "react";
 
-const SignUpModel = () => {
-  return <div>SignUpModel</div>;
-};
+function SignupModel() {
+  const [show, setShow] = useState(false);
+  const [user, setUser] = useState();
 
-export default SignUpModel;
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleChange = (event) =>
+    setUser({ ...user, [event.target.name]: event.target.value });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    handleClose();
+  };
+
+  return (
+    <>
+      <Button variant="outline-light" onClick={handleShow}>
+        SIGN UP
+      </Button>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Body>
+          <form onSubmit={handleSubmit}>
+            <InputGroup className="mb-3">
+              <InputGroup.Text>Username</InputGroup.Text>
+              <FormControl
+                placeholder="Your username"
+                name="username"
+                type="text"
+                onChange={handleChange}
+              />
+            </InputGroup>
+            <InputGroup className="mb-3">
+              <InputGroup.Text>Password</InputGroup.Text>
+              <FormControl
+                name="password"
+                type="password"
+                onChange={handleChange}
+                placeholder="Password"
+              />
+            </InputGroup>
+            <Button variant="outline-dark" type="submit">
+              SIGH UP
+            </Button>
+          </form>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+}
+
+export default SignupModel;
