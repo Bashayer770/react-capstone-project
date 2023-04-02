@@ -12,7 +12,13 @@ const NavBar = () => {
           <div className="Bewhite">SEER</div>
         </div>
       </div>
-      <div className="menu_"></div>
+      <div className="menu_">
+        <div className="theMenuList">
+          <h5>BEEN</h5>
+          <h5>PLANNING</h5>
+          <h5>FRIENDS</h5>
+        </div>
+      </div>
       <div className="profile"></div>
     </div>
   );

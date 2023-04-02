@@ -9,6 +9,7 @@ const BeenPage = () => {
       <div className="mapContainer">
         <div className="BackGround">
           <div className="BEEN">B E E N</div>
+          <div className="beenUnderLine"></div>
           <div className="scrollBar">
             <WorldMap className={"map"} been={been} width="2000" />
           </div>
