@@ -15,7 +15,7 @@ const NavBar = () => {
         <img src={slogo} width="85" />
         <div className="theh5">
           <div>SIGHT</div>
-          <div className="Bewhite">SEER</div>
+          <div className="Bewhite">S E E R</div>
           <div className="barsTopbelowLogo"></div>
         </div>
       </div>

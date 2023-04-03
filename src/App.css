@@ -212,7 +212,7 @@
   padding: 0px;
   font-family: "Inter";
   font-style: italic;
-  font-weight: 200;
+  font-weight: 15px;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
@@ -299,9 +299,115 @@
 }
 
 .worldimage {
+  position: relative;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.imageTextContainer {
+  position: relative;
+}
+.theh6 {
+  position: absolute;
+  bottom: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 1px;
+}
+
+.usernameLoginInput {
   position: absolute;
 
-  box-sizing: border-box;
-  width: 20%;
-  height: 20%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.usernameLoginInput svg {
+  color: white;
+  margin-left: -25px;
+}
+input {
+  background: none;
+  border: none;
+  border-bottom: #ffffff;
+  border-bottom: 1px solid white;
+  width: 383px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+.passwordLoginInput {
+  position: absolute;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.passwordLoginInput svg {
+  color: white;
+  margin-left: -25px;
+}
+
+.rememberMecheckbox {
+  position: absolute;
+
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.rememberText {
+  position: absolute;
+  top: 44%;
+  right: 66%;
+  color: rgba(255, 255, 255, 0.53);
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.Button_ {
+  position: absolute;
+  width: 80%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 382px;
+  height: 40px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 50px 10px rgba(23, 34, 39, 0.15);
+  border-radius: 10px;
+}
+
+.SignupOptionContainer {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.53);
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  font-weight: 100px;
+  font-size: 16px;
+}
+
+.signUpOption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff5c00;
 }
