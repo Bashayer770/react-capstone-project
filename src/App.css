@@ -134,6 +134,43 @@
   position: absolute;
   color: #ff5c00;
 }
+.PLAN {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  color: #00a3ff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.PLAN2 {
+  position: absolute;
+  right: 20%;
+}
+.addCountryButton2 {
+  position: absolute;
+  color: #00a3ff;
+}
+.beenUnderLine2 {
+  width: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0, 163, 255, 0.4);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
 
 .scrollBar {
   height: 100%;

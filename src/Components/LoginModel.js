@@ -4,11 +4,12 @@ import worldmapimg from "../Assests/worldmapimg.png";
 import slogo from "../Assests/slogo.png";
 import UserSvg from "../svg/UserSvg";
 import LockSvg from "../svg/LockSvg";
+import { useLogin } from "../utils/api/Auth/authIndex";
 
 function LoginModel() {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState();
-
+  const login = useLogin();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -17,6 +18,7 @@ function LoginModel() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    login.mutate(user);
     handleClose();
   };
 

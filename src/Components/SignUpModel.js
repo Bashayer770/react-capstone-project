@@ -5,11 +5,12 @@ import UserSvg from "../svg/UserSvg";
 import LockSvg from "../svg/LockSvg";
 import worldmapimg from "../Assests/worldmapimg.png";
 import MailSvg from "../svg/MailSvg";
+import { useRegister } from "../utils/api/Auth/authIndex";
 
 function SignupModel() {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState();
-
+  const register = useRegister();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -18,6 +19,7 @@ function SignupModel() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    register.mutate(user);
     handleClose();
   };
 
