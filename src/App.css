@@ -159,6 +159,17 @@
   right: 20%;
 }
 .addCountryButton2 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(50% 50% at 50% 50%, #89959c 0%, #131c20 100%);
+  border: 1px solid rgba(137, 149, 156, 0.37);
+  border-radius: 50%;
+}
+.addCountryButton2 svg {
   position: absolute;
   color: #00a3ff;
 }
