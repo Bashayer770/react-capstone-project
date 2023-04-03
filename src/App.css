@@ -411,3 +411,40 @@ input {
   transform: translate(-50%, -50%);
   color: #ff5c00;
 }
+
+.EmailInput {
+  position: absolute;
+  padding-left: 1px;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.EmailInput svg {
+  color: #ffffff;
+  margin-left: -25px;
+}
+.usernameSignUpInput {
+  position: absolute;
+
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.usernameSignUpInput svg {
+  color: white;
+  margin-left: -25px;
+}
+
+.passwordSignUpInput {
+  position: absolute;
+
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.passwordSignUpInput svg {
+  color: white;
+  margin-left: -25px;
+}
