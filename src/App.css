@@ -177,9 +177,12 @@
   width: 100%;
 
   overflow: scroll;
-  scrollbar-color: black;
+  scrollbar-color: #576268;
 }
-
+::-webkit-scrollbar {
+  /* color: #243036; */
+  color: #576268;
+}
 .Logo_ {
   width: 100%;
   height: 250px;
