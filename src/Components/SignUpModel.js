@@ -6,13 +6,12 @@ import LockSvg from "../svg/LockSvg";
 import worldmapimg from "../Assests/worldmapimg.png";
 import MailSvg from "../svg/MailSvg";
 import { useRegister } from "../utils/api/Auth/authIndex";
+import { useNavigate } from "react-router-dom";
 
 function SignupModel() {
-  const [show, setShow] = useState(false);
   const [user, setUser] = useState();
   const register = useRegister();
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const navigate = useNavigate();
 
   const handleChange = (event) =>
     setUser({ ...user, [event.target.name]: event.target.value });
@@ -20,7 +19,7 @@ function SignupModel() {
   const handleSubmit = (event) => {
     event.preventDefault();
     register.mutate(user);
-    handleClose();
+    navigate("/");
   };
 
   return (
@@ -74,7 +73,14 @@ function SignupModel() {
                 />
               </InputGroup>
 
-              <Button className="Button_" variant="outline-dark" type="submit">
+              <Button
+                className="Button_"
+                variant="outline-dark"
+                type="submit"
+                style={{
+                  cursor: "pointer",
+                }}
+              >
                 SIGN UP
               </Button>
             </form>

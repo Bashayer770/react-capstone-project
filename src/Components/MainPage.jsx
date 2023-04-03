@@ -1,17 +1,24 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { useUser } from "../utils/api/Auth/authIndex";
 import BeenPage from "./BeenPage";
+import CountrySelector from "./countrySelector";
 import Friends from "./Friends";
 import Moments from "./Moments";
 import NavBar from "./NavBar";
 import PlanningPage from "./PlanningPage";
 
 const MainPage = () => {
+  const navigate = useNavigate();
+  const user = useUser();
+  if (user?.data == false) return navigate("/login");
+
   return (
     <div className="container">
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<BeenPage />}></Route>
+        <Route path="/c" element={<CountrySelector />}></Route>
         <Route path="/Been" element={<BeenPage />}></Route>
         <Route path="/Planning" element={<PlanningPage />}></Route>
         <Route path="/Moments" element={<Moments />}></Route>

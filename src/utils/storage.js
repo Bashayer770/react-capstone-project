@@ -1,6 +1,5 @@
 export const storage = {
-    getToken: () => JSON.parse(window.localStorage.getItem("token") || `null`),
-    setToken: () => JSON.stringify(window.localStorage.setItem("token")),
-    clearToken: () => window.localStorage.removeItem("token"),
-  };
-  
+  getToken: () => window.localStorage.getItem("token") || `null`,
+  setToken: (value) => window.localStorage.setItem("token", value),
+  clearToken: () => window.localStorage.removeItem("token"),
+};

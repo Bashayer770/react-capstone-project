@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+import { Button } from "react-bootstrap";
 
 function CountrySelector() {
   const [value, setValue] = useState("");
@@ -11,11 +12,24 @@ function CountrySelector() {
   };
 
   return (
-    <>
-      <div>Please select the country you've visited:</div>
-
+    <div
+      style={{
+        width: "80%",
+      }}
+    >
       <Select options={countryOptions} value={value} onChange={changeHandler} />
-    </>
+      <Button
+        className="Button_"
+        variant="outline-dark"
+        type="submit"
+        style={{
+          cursor: "pointer",
+          width: "80%",
+        }}
+      >
+        DONE
+      </Button>
+    </div>
   );
 }
 

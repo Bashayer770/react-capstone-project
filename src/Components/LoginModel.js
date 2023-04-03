@@ -5,13 +5,12 @@ import slogo from "../Assests/slogo.png";
 import UserSvg from "../svg/UserSvg";
 import LockSvg from "../svg/LockSvg";
 import { useLogin } from "../utils/api/Auth/authIndex";
+import { useNavigate } from "react-router-dom";
 
 function LoginModel() {
-  const [show, setShow] = useState(false);
   const [user, setUser] = useState();
   const login = useLogin();
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const navigate = useNavigate();
 
   const handleChange = (event) =>
     setUser({ ...user, [event.target.name]: event.target.value });
@@ -19,7 +18,7 @@ function LoginModel() {
   const handleSubmit = (event) => {
     event.preventDefault();
     login.mutate(user);
-    handleClose();
+    navigate("/");
   };
 
   return (
@@ -70,12 +69,26 @@ function LoginModel() {
               ></input>
               <h6 className="rememberText">Remember me</h6>
 
-              <Button className="Button_" variant="outline-dark" type="submit">
+              <Button
+                className="Button_"
+                variant="outline-dark"
+                type="submit"
+                style={{
+                  cursor: "pointer",
+                }}
+              >
                 LOG IN
               </Button>
               <div className="SignupOptionContainer">
                 <h6>Don’t have an account? </h6>
-                <h6 className="signUpOption">SIGN UP</h6>
+                <h6
+                  className="signUpOption"
+                  onClick={() => {
+                    navigate("/signup");
+                  }}
+                >
+                  SIGN UP
+                </h6>
               </div>
             </form>
           </Modal.Body>

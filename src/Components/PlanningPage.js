@@ -9,25 +9,25 @@ const PlanningPage = () => {
   const Planning = [countries.Canada, countries.Spain];
   return (
     <>
-      <TransformWrapper>
-        <TransformComponent>
-          <div className="mapContainer">
-            <div className="PLAN">
-              P L A N N I N G
-              <div className="PLAN2">
-                <div className="addCountryButton2">
-                  <Pluscircle />
-                </div>
-              </div>
-            </div>
-            <div className="beenUnderLine2"></div>
-
-            <div className="scrollBar">
-              <WorldMap className={"map"} been={Planning} width="2000" />
+      <div className="mapContainer">
+        <div className="PLAN">
+          P L A N N I N G
+          <div className="PLAN2">
+            <div className="addCountryButton2">
+              <Pluscircle />
             </div>
           </div>
-        </TransformComponent>
-      </TransformWrapper>
+        </div>
+        <div className="beenUnderLine2"></div>
+
+        <div className="scrollBar">
+          <TransformWrapper limitToBounds={false}>
+            <TransformComponent>
+              <WorldMap className={"map map-2"} been={Planning} width="2000" />
+            </TransformComponent>
+          </TransformWrapper>
+        </div>
+      </div>
     </>
   );
 };
