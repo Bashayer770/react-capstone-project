@@ -18,6 +18,9 @@ const WrapUp = () => {
       <div className="listContainer">
         <div className="theListBorder"></div>
       </div>
+      <div className="verticleTop"></div>
+      <div className="counter_">3</div>
+      <div className="verticleBottom"></div>
     </div>
   );
 };
