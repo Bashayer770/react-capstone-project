@@ -7,11 +7,20 @@ import Pluscircle from "../svg/pluscircle";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import CloseIcon from "../svg/CloseIcon";
 import CountrySelector from "./countrySelector";
+import { getPlan } from "./plan";
+import { useQuery } from "@tanstack/react-query";
+import { AddPlan } from "./AddPlan";
+import { been } from "./been";
+import { plan } from "./plan";
 
 const PlanningPage = () => {
   const [showAddPlan, setShowAddPlan] = useState(false);
-
-  const Planning = [countries.Canada, countries.Spain];
+  //been = { thePlan };
+  const response = useQuery(["myPlanList"], getPlan);
+  const thePlan = response?.data || [];
+  const onClick2 = (e) => {
+    alert(e);
+  };
   return (
     <>
       <div className="mapContainer">
@@ -33,75 +42,17 @@ const PlanningPage = () => {
         <div className="scrollBar">
           <TransformWrapper limitToBounds={false}>
             <TransformComponent>
-              <WorldMap className={"map map-2"} been={Planning} width="2000" />
+              <WorldMap
+                className={"map map-2"}
+                thePlan={thePlan}
+                width="2000"
+                onclick={onClick2}
+              />
             </TransformComponent>
           </TransformWrapper>
         </div>
       </div>
-      {showAddPlan && (
-        <div
-          style={{
-            width: "100vw",
-            height: "100vh",
-            position: "absolute",
-            top: 0,
-            left: 0,
-
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              width: "30%",
-              height: "50%",
-              backgroundColor: "white",
-              borderRadius: "15px",
-              display: "flex",
-              justifyContent: "center",
-              position: "relative",
-              zIndex: 2,
-              boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-
-              background:
-                "linear-gradient(0.14deg, rgba(255, 255, 255, 0.2) 19.87%, rgba(12, 22, 24, 0.2) 100.94%), #131C20",
-            }}
-          >
-            <div className="selectVisited">
-              Please select the country you're planning to visit:
-            </div>
-            <div className="closeIcone" style={{ backgroundColor: "orange" }}>
-              <CloseIcon
-                onClick={() => {
-                  setShowAddPlan(false);
-                }}
-              />
-            </div>
-            <div className="visitedUnderLine"></div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "100%",
-              }}
-            >
-              <CountrySelector />
-            </div>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              backgroundColor: "black",
-              opacity: "70%",
-              position: "absolute",
-              zIndex: 1,
-            }}
-          ></div>
-        </div>
-      )}
+      {showAddPlan && <AddPlan setShowAddPlan={setShowAddPlan} />}
     </>
   );
 };
