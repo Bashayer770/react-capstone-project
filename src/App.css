@@ -54,6 +54,8 @@
   cursor: pointer;
   stroke: orange;
   stroke-width: 1.5;
+
+  box-shadow: 0px 4px 50px 50px #ff5e00;
 }
 
 .mapContainer {
@@ -83,7 +85,40 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
+
+/* .leftBar2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 200%;
+  bottom: -25%;
+  background: linear-gradient(180deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%);
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .leftBar2::after { */
+/* content: "";
+  position: absolute;
+  background: linear-gradient(
+      0.14deg,
+      rgba(255, 255, 255, 0.2) 19.87%,
+      rgba(12, 22, 24, 0.2) 100.94%
+    ),
+    #131c20;
+  inset: 5px;
+  border-radius: 16px; */
+/* } */
 
 .BEEN {
   height: 10%;
@@ -134,6 +169,7 @@
 .addCountryButton svg {
   position: absolute;
   color: #ff5c00;
+  cursor: pointer;
 }
 
 .selectVisited {
@@ -158,7 +194,7 @@
 .map-2 #highLight {
   fill: #01a3e4;
   cursor: pointer;
-  stroke: rgb(66, 164, 249);
+  stroke: rgb(0, 159, 233);
   stroke-width: 1.5;
 }
 .map-2 path:hover {
@@ -210,6 +246,7 @@
 .addCountryButton2 svg {
   position: absolute;
   color: #00a3ff;
+  cursor: pointer;
 }
 .beenUnderLine2 {
   width: 193px;
@@ -265,8 +302,10 @@
   line-height: 15px;
   text-align: center;
 
-  color: #ffffff;
+  color: #ffffff !important;
+  /* cursor: pointer; */
 }
+
 .barsTopbelowLogo {
   width: 168px;
   height: 0px;
@@ -286,7 +325,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-
+  color: white !important;
   position: relative;
 }
 
@@ -294,6 +333,7 @@
   position: absolute;
   height: 100%;
   right: 0;
+  cursor: pointer;
 }
 
 .theh5 {
@@ -541,4 +581,26 @@ input:focus {
 .passwordSignUpInput svg {
   color: white;
   margin-left: -25px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+a:focus {
+  text-decoration: none;
+  color: orange;
+}
+a:active {
+  text-decoration: none;
+  color: teal;
+}
+a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.active {
+  color: #ff5c00 !important;
 }

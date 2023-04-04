@@ -7,10 +7,12 @@ import PlanningPage from "./PlanningPage";
 import Friends from "./Friends";
 import Chevrondown from "../svg/chevrondown";
 import Logout from "../svg/logout";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div className="leftBar">
+      <div className="leftBar2" />
       <div className="Logo_">
         <img src={slogo} width="85" />
         <div className="theh5">
@@ -21,15 +23,20 @@ const NavBar = () => {
       </div>
       <div className="menu_">
         <div className="theMenuList">
-          <h5>BEEN</h5>
+          <NavLink to={"/"}>
+            <h5 style={{ cursor: "pointer" }}>BEEN</h5>
+          </NavLink>
 
           <div className="bars"></div>
-
-          <h5>PLANNING</h5>
+          <NavLink to={"/Planning"}>
+            <h5 style={{ cursor: "pointer" }}>PLANNING</h5>
+          </NavLink>
 
           <div className="bars"></div>
           <div className="nav-item">
-            <h5>FRIENDS</h5>
+            <NavLink to={"/Friends"}>
+              <h5 style={{ cursor: "pointer" }}>FRIENDS</h5>
+            </NavLink>
             <Chevrondown />
           </div>
         </div>
@@ -57,6 +64,7 @@ const NavBar = () => {
             fontWeight: 450,
             color: " #FFFFFF",
             letterSpacing: "1px",
+            cursor: "pointer",
           }}
         >
           Username
