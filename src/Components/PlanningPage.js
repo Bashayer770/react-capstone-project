@@ -44,7 +44,7 @@ const PlanningPage = () => {
             <TransformComponent>
               <WorldMap
                 className={"map map-2"}
-                thePlan={thePlan}
+                been={thePlan}
                 width="2000"
                 onclick={onClick2}
               />

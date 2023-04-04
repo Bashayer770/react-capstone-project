@@ -584,18 +584,19 @@ input:focus {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 a:hover {
   text-decoration: none;
-  color: yellow;
+  color: white;
 }
 a:focus {
   text-decoration: none;
-  color: orange;
+  color: white;
 }
 a:active {
   text-decoration: none;
-  color: teal;
+  color: white;
 }
 a:visited {
   text-decoration: none;
@@ -803,7 +804,9 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 17%;
+  right: 12%;
+  top: 9%;
+
   color: #ff5c00;
 }
 
@@ -851,21 +854,26 @@ a:visited {
 
 .verticleTop {
   position: absolute;
-  width: 26%;
+  width: 74%;
   height: 0px;
-  left: 81%;
+  left: 57%;
   top: 25%;
 
   border: 1px solid #ff5c00;
   transform: rotate(-89.79deg);
 }
-
+.Rightbar {
+  position: absolute;
+  right: 50px;
+  width: 30%;
+  height: 100%;
+}
 .verticleBottom {
   position: absolute;
-  width: 22.6%;
+  width: 56%;
   height: 0px;
-  left: 82.7%;
-  top: 80%;
+  left: 65.8%;
+  top: 81%;
   overflow: hidden;
   border: 1px solid #ff5c00;
   transform: rotate(-90deg);
@@ -875,8 +883,8 @@ a:visited {
   width: 3%;
   font-size: 36px;
   position: absolute;
-  left: 93.5%;
-  top: 52%;
+  left: 92%;
+  top: 52.3%;
   color: #ff5c00;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -893,7 +901,7 @@ a:visited {
   position: absolute;
   width: 61px;
   height: 0px;
-  left: 92.4%;
+  left: 86%;
   top: 3%;
 
   border: 1px solid #ff5c00;
@@ -902,7 +910,7 @@ a:visited {
   position: absolute;
   width: 33px;
   height: 0px;
-  left: 93.1%;
+  left: 89.8%;
   top: 5.5%;
 
   border: 1px solid #ff5c00;
