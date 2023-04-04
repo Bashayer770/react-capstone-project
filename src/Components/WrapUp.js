@@ -21,6 +21,8 @@ const WrapUp = () => {
       <div className="verticleTop"></div>
       <div className="counter_">3</div>
       <div className="verticleBottom"></div>
+      <div className="slashDeco1"></div>
+      <div className="slashDeco2"></div>
     </div>
   );
 };
