@@ -3,8 +3,7 @@ import Select from "react-select";
 import countryList from "react-select-country-list";
 import { Button } from "react-bootstrap";
 
-function CountrySelector() {
-  const [value, setValue] = useState("");
+function CountrySelector({ value, setValue, updatedBeen }) {
   const countryOptions = useMemo(() => countryList().getData(), []);
 
   const changeHandler = (value) => {
@@ -19,6 +18,7 @@ function CountrySelector() {
     >
       <Select options={countryOptions} value={value} onChange={changeHandler} />
       <Button
+        onClick={updatedBeen}
         className="Button_"
         variant="outline-dark"
         type="submit"

@@ -604,3 +604,90 @@ a:visited {
 .active {
   color: #ff5c00 !important;
 }
+
+.AddCountryContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddCountryBox {
+  width: 30%;
+  height: 50%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  background: linear-gradient(
+      0.14deg,
+      rgba(255, 255, 255, 0.2) 19.87%,
+      rgba(12, 22, 24, 0.2) 100.94%
+    ),
+    #131c20;
+}
+
+.countrySelector_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.countrySelectorOpacity {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 70%;
+  position: absolute;
+}
+
+.lowerContainerLB {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lowerContainerLB2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 450;
+  color: #ffffff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.usersIcon {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  left: 12px;
+
+  background: linear-gradient(
+    186.22 deg "#131C20" -87.4% rgba(217, 217, 217, 0) 95.09%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
