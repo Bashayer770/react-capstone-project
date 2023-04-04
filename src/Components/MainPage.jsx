@@ -8,6 +8,7 @@ import Moments from "./Moments";
 import NavBar from "./NavBar";
 import PlanningPage from "./PlanningPage";
 import UploadForm from "./uploadForm";
+import WrapUp from "./WrapUp";
 
 const MainPage = () => {
   const navigate = useNavigate();
@@ -24,6 +25,7 @@ const MainPage = () => {
         <Route path="/upload" element={<UploadForm />}></Route>
         <Route path="/Planning" element={<PlanningPage />}></Route>
         <Route path="/Moments" element={<Moments />}></Route>
+        <Route path="/wrapup" element={<WrapUp />}></Route>
         <Route path="/Friends" element={<Friends />}></Route>
       </Routes>
     </div>
