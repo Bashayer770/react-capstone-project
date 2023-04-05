@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Plussquare from "../svg/Plussquare.jsx";
+import byee from "../videosGallery/byee.mp4";
+import { countries } from "./CountryData.js";
 
 const WrapUp = () => {
+  const [name, setName] = useState("");
+
   return (
     <div className="TheBigContainerWrap">
       {/* <div className="counterCountry"></div> */}
@@ -9,7 +13,7 @@ const WrapUp = () => {
         W R A P U P
         <div className="Inn">
           IN
-          <div className="countryName">country name</div>
+          <div className="countryName"></div>
         </div>
       </div>
       <div className="uploadForm">
@@ -17,7 +21,27 @@ const WrapUp = () => {
       </div>
 
       <div className="listContainer">
-        <div className="theListBorder"></div>
+        <div className="theListBorder">
+          <div className="videoplayer">
+            <video width="100%" controls autoPlay>
+              <source src={byee} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div className="theListBorder2">
+          <div className="videoplayer">
+            <video width="100%" controls autoPlay>
+              <source src={byee} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div className="theListBorder3">
+          <div className="videoplayer">
+            <video width="100%" controls autoPlay>
+              <source src={byee} type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </div>
 
       <div className="Rightbar">

@@ -87,7 +87,7 @@ function LoginModel() {
                     navigate("/signup");
                   }}
                 >
-                  SIGN UP
+                  REGISTER
                 </h6>
               </div>
             </form>
