@@ -23,7 +23,7 @@ const MainPage = () => {
         <Route path="/" element={<BeenPage />}></Route>
         <Route path="/c" element={<CountrySelector />}></Route>
         <Route path="/Been" element={<BeenPage />}></Route>
-        <Route path="/upload" element={<UploadForm />}></Route>
+        <Route path="/upload/:country" element={<UploadForm />}></Route>
         <Route path="/Planning" element={<PlanningPage />}></Route>
         <Route path="/Moments" element={<Moments />}></Route>
         <Route path="/wrapup/:country" element={<WrapUp />}></Route>

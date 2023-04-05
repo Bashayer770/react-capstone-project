@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Plussquare from "../svg/Plussquare.jsx";
 import byee from "../videosGallery/byee.mp4";
 import { countries } from "./CountryData.js";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import VideoList from "./VideoList/videoList.js";
 import { gallery } from "./been.js";
 
 const WrapUp = () => {
   const [name, setName] = useState("");
   const { country } = useParams();
+  const navigate = useNavigate();
   const videolist = gallery[country]?.map((x) => <VideoList byee={x} />);
   return (
     <div className="TheBigContainerWrap">
@@ -20,7 +21,12 @@ const WrapUp = () => {
           <div className="countryName"> {country}</div>
         </div>
       </div>
-      <div className="uploadForm">
+      <div
+        className="uploadForm"
+        onClick={() => {
+          navigate(`/upload/${country}`);
+        }}
+      >
         <Plussquare />
       </div>
 

@@ -1,14 +1,21 @@
 import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import CloseIcon from "../svg/CloseIcon";
 import Upload from "../svg/Upload";
 
-const uploadForm = () => {
+const UploadForm = () => {
+  const { country } = useParams();
+  const navigate = useNavigate();
   return (
     <div className="uploadContainer">
       <div className="card">
         <div className="fileUpload">file upload:</div>
         <div className="closeIcone" style={{ backgroundColor: "orange" }}>
-          <CloseIcon />
+          <CloseIcon
+            onClick={() => {
+              navigate(`/wrapup/${country}`);
+            }}
+          />
         </div>
         <div className="uploadUnderLine"></div>
 
@@ -39,4 +46,4 @@ const uploadForm = () => {
   );
 };
 
-export default uploadForm;
+export default UploadForm;

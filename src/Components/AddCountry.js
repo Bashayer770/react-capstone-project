@@ -21,7 +21,8 @@ export const AddCountry = ({ setShowAddCountry, setShowAddPlan }) => {
   });
 
   const updatedBeen = () => {
-    UpdateBeenList.mutate(value.label);
+    console.log(value);
+    UpdateBeenList.mutate(value);
   };
 
   return (

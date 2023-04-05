@@ -1469,3 +1469,30 @@ a:visited {
 
   color: #ffffff;
 }
+select {
+  background-color: transparent !important;
+}
+select option {
+  margin: 40px;
+  background: transparent !important;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.helloWorld div,
+select,
+option {
+  background-color: transparent !important;
+}
+
+.helloWorld select {
+  background-color: transparent !important;
+}
+.helloWorld option {
+  background: linear-gradient(
+      0.14deg,
+      rgba(255, 255, 255, 0.2) 19.87%,
+      rgba(12, 22, 24, 0.2) 100.94%
+    ),
+    #131c20 !important;
+}
