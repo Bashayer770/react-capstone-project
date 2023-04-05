@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import Plussquare from "../svg/Plussquare.jsx";
 import byee from "../videosGallery/byee.mp4";
 import { countries } from "./CountryData.js";
+import { useParams } from "react-router-dom";
+import VideoList from "./VideoList/videoList.js";
+import { gallery } from "./been.js";
 
 const WrapUp = () => {
   const [name, setName] = useState("");
-
+  const { country } = useParams();
+  const videolist = gallery[country]?.map((x) => <VideoList byee={x} />);
   return (
     <div className="TheBigContainerWrap">
       {/* <div className="counterCountry"></div> */}
@@ -13,36 +17,14 @@ const WrapUp = () => {
         W R A P U P
         <div className="Inn">
           IN
-          <div className="countryName"></div>
+          <div className="countryName"> {country}</div>
         </div>
       </div>
       <div className="uploadForm">
         <Plussquare />
       </div>
 
-      <div className="listContainer">
-        <div className="theListBorder">
-          <div className="videoplayer">
-            <video width="100%" controls autoPlay>
-              <source src={byee} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <div className="theListBorder2">
-          <div className="videoplayer">
-            <video width="100%" controls autoPlay>
-              <source src={byee} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <div className="theListBorder3">
-          <div className="videoplayer">
-            <video width="100%" controls autoPlay>
-              <source src={byee} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </div>
+      <div className="listContainer">{videolist}</div>
 
       <div className="Rightbar">
         <div className="verticleTop"></div>

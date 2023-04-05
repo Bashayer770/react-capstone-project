@@ -525,6 +525,20 @@ input:focus {
   box-shadow: 0px 4px 50px 10px rgba(23, 34, 39, 0.15);
   border-radius: 10px;
 }
+.Button_2 {
+  position: absolute;
+  width: 80%;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 382px;
+  height: 40px;
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px 10px rgba(23, 34, 39, 0.15);
+  border-radius: 10px;
+}
 
 .SignupOptionContainer {
   position: absolute;
@@ -633,8 +647,8 @@ a:visited {
   justify-content: center;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.25);
   background: linear-gradient(
       0.14deg,
       rgba(255, 255, 255, 0.2) 19.87%,
@@ -678,7 +692,7 @@ a:visited {
   justify-content: center;
   position: relative;
   z-index: 2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.25);
 
   background: linear-gradient(
       0.14deg,
@@ -721,6 +735,12 @@ a:visited {
 .filesUploads button {
   border-radius: 5px;
 }
+.uploadIcon svg {
+  position: absolute;
+  left: 113%;
+  top: 0%;
+  cursor: pointer;
+}
 
 .uploadUnderLine2 {
   position: absolute;
@@ -756,6 +776,11 @@ a:visited {
   text-align: center;
 
   color: rgba(255, 255, 255, 0.4);
+}
+.description input {
+  border-bottom: none;
+  font-style: italic;
+  text-align: start;
 }
 
 .lowerContainerLB {
@@ -865,9 +890,13 @@ a:visited {
   align-items: center;
   justify-content: center;
   right: 12%;
-  top: 9%;
+  top: 9%around;
   cursor: pointer;
   color: #ff5c00;
+  z-index: 100;
+}
+.uploadForm svg:focus {
+  cursor: pointer;
 }
 
 .listContainer {
@@ -876,10 +905,9 @@ a:visited {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex-wrap: wrap;
   width: 70%;
   height: 80%;
 
@@ -903,12 +931,10 @@ a:visited {
   background: #131c20;
 }
 .theListBorder2 {
-  position: absolute;
   width: 15%;
   height: 20%;
   border-radius: 2px;
-  left: 16%;
-  top: 0.5%;
+
   background: #131c20;
 }
 .theListBorder3 {
@@ -991,4 +1017,250 @@ a:visited {
   top: 5.5%;
 
   border: 1px solid #ff5c00;
+}
+
+.detailContainer {
+  width: 80%;
+  position: relative;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+}
+.DetailTitle {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  color: #ff5c00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.Inn2 {
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  bottom: -28%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 5px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+.DetailListBorder {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 15%;
+  left: 10%;
+  background: linear-gradient(
+      0.14deg,
+      rgba(255, 255, 255, 0.2) 19.87%,
+      rgba(12, 22, 24, 0.2) 100.94%
+    ),
+    #131c20;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.veiwimage img {
+  border-radius: 15px;
+  size: 400px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.placeTitle1 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  top: 1%;
+  left: 36%;
+  position: absolute;
+  font-size: 36px;
+
+  color: #ff5c00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 44px;
+  text-align: center;
+
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.abstract1 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  top: 5%;
+  left: 36%;
+  position: absolute;
+  font-size: 36px;
+
+  color: #ff5c00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 44px;
+  text-align: center;
+
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.P1 {
+  position: absolute;
+}
+.P2title {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  top: 55%;
+  left: 2%;
+  position: absolute;
+  font-size: 36px;
+
+  color: #ff5c00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 44px;
+  text-align: center;
+
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.paragraph1 {
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 20%;
+  position: absolute;
+  top: 60%;
+  left: 1.5%;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.intro {
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 50%;
+  top: 12%;
+  left: 35%;
+  position: absolute;
+
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.P2 img {
+  position: absolute;
+  left: 28%;
+}
+.P2title2 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  top: 55%;
+  left: 31%;
+  position: absolute;
+  font-size: 36px;
+
+  color: #ff5c00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 44px;
+  text-align: center;
+
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.paragraph2 {
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 20%;
+  position: absolute;
+  top: 60%;
+  left: 28%;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.P3 img {
+  position: absolute;
+  left: 55%;
+}
+.P2title3 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  top: 55%;
+  left: 54%;
+  position: absolute;
+  font-size: 36px;
+
+  color: #ff5c00;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 44px;
+  text-align: center;
+
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.paragraph3 {
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 20%;
+  position: absolute;
+  top: 60%;
+  left: 56%;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #ffffff;
 }

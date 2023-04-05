@@ -17,11 +17,21 @@ const uploadForm = () => {
             <input type="file" hidden />
             <button>Choose File</button>
             <span>No File Choosen</span>
+            <div className="uploadIcon">
+              <Upload />
+            </div>
           </div>
         </div>
         <div className="uploadUnderLine2"></div>
         <div className="descriptionC"></div>
-        <div className="description">Description...</div>
+        {/* <div className="description">Description...</div> */}
+        <div className="description">
+          <input
+            type="text"
+            name="description"
+            placeholder="Description..."
+          ></input>
+        </div>
         <button className="Button_2">UPLOAD</button>
       </div>
       <div className=""></div>

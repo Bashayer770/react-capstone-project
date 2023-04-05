@@ -21,8 +21,10 @@ const BeenPage = () => {
   //const onClick2 = (e) => {
   //alert(e);
 
-  const onClick2 = () => {
-    navigate("/wrapup");
+  const onClick2 = (e) => {
+    if (been.includes(e)) {
+      navigate(`/wrapup/${e}`);
+    }
   };
 
   return (

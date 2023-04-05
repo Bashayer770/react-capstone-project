@@ -13,6 +13,7 @@ const Plussquare = () => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="feather feather-plus-square"
+      style={{ cursor: "pointer" }}
     >
       <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
       <line x1="12" y1="8" x2="12" y2="16"></line>
