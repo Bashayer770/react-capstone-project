@@ -1,12 +1,17 @@
 import React from "react";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const ShowDetails = () => {
+  //const [details, setDetails] = useState("");
+  const { country } = useParams();
+
   return (
     <div className="detailContainer">
       <div className="DetailTitle">MOST VISITED PLACES</div>
       <div className="Inn2">
         IN
-        <div className="countryName"> ITALY</div>
+        <div className="countryName"> {country}</div>
       </div>
       <div className="DetailListBorder">
         <div className="veiwimage">

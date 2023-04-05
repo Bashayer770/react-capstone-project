@@ -42,7 +42,7 @@ export const AddPlan = ({ setShowAddPlan }) => {
           <CountrySelector
             value={value}
             setValue={setValue}
-            updatedPlan={updatedPlan}
+            updatedBeen={updatedPlan}
           />
         </div>
       </div>

@@ -7,7 +7,7 @@ import { addtoBeenList } from "./been";
 import CloseIcon from "../svg/CloseIcon";
 import CountrySelector from "./countrySelector";
 
-export const AddCountry = ({ setShowAddCountry }) => {
+export const AddCountry = ({ setShowAddCountry, setShowAddPlan }) => {
   const [value, setValue] = useState("");
 
   const queryClient = useQueryClient();
@@ -16,6 +16,7 @@ export const AddCountry = ({ setShowAddCountry }) => {
     onSuccess: () => {
       queryClient.invalidateQueries(["myBeenList"]);
       setShowAddCountry(false);
+      setShowAddPlan(false);
     },
   });
 

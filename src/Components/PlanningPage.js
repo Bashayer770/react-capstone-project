@@ -12,14 +12,18 @@ import { useQuery } from "@tanstack/react-query";
 import { AddPlan } from "./AddPlan";
 import { been } from "./been";
 import { plan } from "./plan";
+import { useNavigate } from "react-router-dom";
 
 const PlanningPage = () => {
   const [showAddPlan, setShowAddPlan] = useState(false);
+  const navigate = useNavigate();
   //been = { thePlan };
   const response = useQuery(["myPlanList"], getPlan);
   const thePlan = response?.data || [];
   const onClick2 = (e) => {
-    alert(e);
+    if (thePlan.includes(e)) {
+      navigate(`/showdetails/${e}`);
+    }
   };
   return (
     <>

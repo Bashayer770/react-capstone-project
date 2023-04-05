@@ -28,7 +28,7 @@ const MainPage = () => {
         <Route path="/Moments" element={<Moments />}></Route>
         <Route path="/wrapup/:country" element={<WrapUp />}></Route>
         <Route path="/Friends" element={<Friends />}></Route>
-        <Route path="/showdetails" element={<ShowDetails />}></Route>
+        <Route path="/showdetails/:country" element={<ShowDetails />}></Route>
       </Routes>
     </div>
   );
