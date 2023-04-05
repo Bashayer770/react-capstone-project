@@ -1,6 +1,6 @@
 import { countries } from "./CountryData";
 
-export const plan = [countries.Belgium, countries["Russian Federation (the)"]];
+export const plan = [countries.Greece];
 
 export const addtoPlanList = (country) => {
   plan.push(country);
