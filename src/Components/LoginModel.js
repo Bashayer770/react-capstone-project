@@ -33,7 +33,7 @@ function LoginModel() {
         </div>
         <div className="imageTextContainer">
           <img className="worldimage" src={worldmapimg} width="100%" />
-          <h6 className="theh6">LOG IN</h6>
+          <h6 className="theh6">SIGN IN</h6>
 
           {/* <Button variant="outline-light mx-3" onClick={handleShow}> */}
           {/* LOGIN */}
@@ -77,7 +77,7 @@ function LoginModel() {
                   cursor: "pointer",
                 }}
               >
-                LOG IN
+                SIGN IN
               </Button>
               <div className="SignupOptionContainer">
                 <h6>Don’t have an account? </h6>
@@ -87,7 +87,7 @@ function LoginModel() {
                     navigate("/signup");
                   }}
                 >
-                  REGISTER
+                  SIGN UP
                 </h6>
               </div>
             </form>
