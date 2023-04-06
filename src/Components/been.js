@@ -1,11 +1,16 @@
 import { countries } from "./CountryData";
 import byee from "../videosGallery/byee.mp4";
+import Canada1 from "../videosGallery/Canada1.mp4";
+import Canada2 from "../videosGallery/Canada2.mp4";
+import Canada3 from "../videosGallery/Canada3.mp4";
+import canada4 from "../videosGallery/canada4.mp4";
+import canada5 from "../videosGallery/canada5.mp4";
 
 export const been = [countries.Canada];
 
 export const gallery = {
-  [countries.Canada]: [byee, byee, byee, byee, byee, byee],
-  [countries.Argentina]: [byee],
+  [countries.Canada]: [Canada1, Canada2, Canada3, canada4, canada5],
+  [countries.Argentina]: [Canada3],
 };
 
 export const details = {

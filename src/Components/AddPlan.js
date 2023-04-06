@@ -20,7 +20,7 @@ export const AddPlan = ({ setShowAddPlan }) => {
   });
 
   const updatedPlan = () => {
-    UpdatePlanList.mutate(value.label);
+    UpdatePlanList.mutate(value);
   };
 
   return (
