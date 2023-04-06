@@ -6,7 +6,7 @@ import Canada3 from "../videosGallery/Canada3.mp4";
 import canada4 from "../videosGallery/canada4.mp4";
 import canada5 from "../videosGallery/canada5.mp4";
 
-export const been = [countries.Canada];
+export const been = [countries.Canada, countries.Argentina];
 
 export const gallery = {
   [countries.Canada]: [Canada1, Canada2, Canada3, canada4, canada5],
