@@ -683,7 +683,7 @@ a:visited {
   align-items: center;
 }
 .card {
-  width: 30%;
+  width: 43%;
   height: 50%;
   background-color: white;
   border-radius: 15px;
@@ -714,7 +714,7 @@ a:visited {
 }
 .uploadUnderLine {
   position: absolute;
-  top: 10%;
+  top: 13%;
   width: 300px;
   border: 1px solid rgba(255, 255, 255, 0.71);
 }
@@ -747,7 +747,7 @@ a:visited {
   width: 45%;
   height: 0px;
   left: 27%;
-  top: 30.5%;
+  top: 32%;
 
   border: 1px solid rgba(255, 255, 255, 0.71);
 }
@@ -957,9 +957,9 @@ a:visited {
 
 .verticleTop {
   position: absolute;
-  width: 74%;
+  width: 90%;
   height: 0px;
-  left: 57%;
+  left: 49%;
   top: 25%;
 
   border: 1px solid #ff5c00;
@@ -973,9 +973,9 @@ a:visited {
 }
 .verticleBottom {
   position: absolute;
-  width: 56%;
+  width: 70%;
   height: 0px;
-  left: 65.8%;
+  left: 59%;
   top: 81%;
   overflow: hidden;
   border: 1px solid #ff5c00;
